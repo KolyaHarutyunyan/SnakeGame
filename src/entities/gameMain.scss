@@ -1,0 +1,21 @@
+.game-main {
+    width: 100%;
+    text-align: center;
+    .game-score {
+        font-size: 24px;
+        font-weight: 500;
+        color: #d53a9d;
+        em {
+            color: #743ad5;
+        }
+    }
+    .game-board {
+        max-width: 600px;
+        width: 100%;
+        height: 300px;
+        margin: 20px auto;
+        border: 10px solid black;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to left, #743ad5, #d53a9d );
+    }
+}

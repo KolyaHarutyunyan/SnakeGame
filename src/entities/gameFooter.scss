@@ -1,0 +1,66 @@
+.game-footer {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .how-to-play-actions-box {
+        .how-to-play-title {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .how-to-play-subtitle {
+            font-size: 16px;
+            font-weight: 500;
+            color: #d53a9d;
+            margin-bottom: 8px;
+            &::before {
+                content: "Note:";
+                font-size: 18px;
+                font-weight: 500;
+                color: #ffffff;
+                margin-right: 8px;
+            }
+            &::after {
+                content: "d";
+                font-size: 18px;
+                font-weight: 500;
+                color: #743ad5;
+                margin-left: 8px;
+            }
+        }
+        .how-to-play-actions-list {
+            width: 100%;
+            list-style: none;
+            li {
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #743ad5;
+                    margin-left: 8px;
+                    &:last-child {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .reset-game-button {
+        border: none;
+        outline: none;
+        height: 36px;
+        border-radius: 8px;
+        padding: 0 8px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffffff;
+        background: linear-gradient(to left, #743ad5, #d53a9d);
+        transition: all .2s linear;
+        cursor: pointer;
+        &:hover {
+            background: linear-gradient(to left, #ffffff, #d53a9d);
+            color: #743ad5;
+        }        
+    }
+}
