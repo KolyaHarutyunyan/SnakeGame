@@ -69,7 +69,7 @@ export const useSnakeGame = (): SnakeGame => {
 
     const createFood = (): Position => foodPosition.map((_, i) => getRandomPosition(i));
 
-    const checkCollision = (piece: Position, snake = snakePosition): boolean => {
+    const checkCollision = (piece: Position, snake: Snake = snakePosition): boolean => {
         if (
             piece[0] * SCALE >= BOARD_SIZE[0] ||
             piece[0] < 0 ||

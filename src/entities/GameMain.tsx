@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from "react";
-import { useInterval } from "../utils/useInterval";
-import { useSnakeGame } from "../utils/useSnakeGame";
+import { useEffect, useRef } from "react";
+import { useInterval } from "../hooks/useInterval";
+import { useSnakeGame } from "../hooks/useSnakeGame";
 import { BOARD_SIZE, SCALE } from "./constants";
 
 const GameMain = () => {
