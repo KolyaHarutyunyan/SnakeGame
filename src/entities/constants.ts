@@ -50,7 +50,7 @@ export const FOOD_START: Position = [8, 3];
 
 export const SCALE = 12;
 
-export const SPEED = 300;
+export const SPEED = 250;
 
 export const DIRECTIONS: Directions = {
   "w": [0, -1], // up
