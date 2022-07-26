@@ -1,8 +1,5 @@
-import React from "react";
 import SnakeGame from "./components/SnakeGame";
 
-const App: React.FC = () => {
-  return <SnakeGame />;
-}
+const App = () => <SnakeGame />;
 
 export default App;

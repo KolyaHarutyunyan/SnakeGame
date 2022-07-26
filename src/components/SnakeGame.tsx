@@ -3,7 +3,7 @@ import GameFooter from "../entities/GameFooter";
 import GameHeader from "../entities/GameHeader";
 import GameMain from "../entities/GameMain";
 
-const SnakeGame: React.FC = () => {
+const SnakeGame = () => {
     return (
         <div className="snake-game-container">
             <GameHeader />
