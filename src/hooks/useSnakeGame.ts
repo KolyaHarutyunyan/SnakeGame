@@ -64,6 +64,9 @@ export const useSnakeGame = (): SnakeGame => {
             case "w":
                 setSnakeDirection(DIRECTIONS[key]);
                 break;
+
+            default: 
+                return;
         }
     };
 
@@ -106,12 +109,16 @@ export const useSnakeGame = (): SnakeGame => {
             snakeDeepClone[0][1] + snakeDirection[1]
         ];
         snakeDeepClone.unshift(newSnakeHead);
-        if (scores === 100) {
+        if (scores >= 100) {
             if (snakeSpeed !== null) {
                 setSnakeSpeed(150);
             }
+        } else  if (scores >= 200) {
+            if (snakeSpeed !== null) {
+                setSnakeSpeed(100);
+            }
         }
-        if (checkCollision(newSnakeHead) || scores === 300) {
+        if (checkCollision(newSnakeHead) || scores >= 300) {
             endGame();
             if (checkCollision(newSnakeHead)) {
                 alert(`Game Over \n Your Score is ${scores}`);
